@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */; };
+		D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */; };
+		D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */; };
+		D0E8AFA02A03D388002EF2F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E8AF9F2A03D388002EF2F4 /* Preview Assets.xcassets */; };
+		D0E8AFA22A03D388002EF2F4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFA12A03D388002EF2F4 /* Persistence.swift */; };
+		D0E8AFA52A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFA32A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld */; };
+		D0E8AFAF2A03D389002EF2F4 /* Yyussa_RentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFAE2A03D389002EF2F4 /* Yyussa_RentTests.swift */; };
+		D0E8AFB92A03D389002EF2F4 /* Yyussa_RentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFB82A03D389002EF2F4 /* Yyussa_RentUITests.swift */; };
+		D0E8AFBB2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFBA2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E8AFAB2A03D389002EF2F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E8AF8D2A03D386002EF2F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E8AF942A03D386002EF2F4;
+			remoteInfo = "Yyussa Rent";
+		};
+		D0E8AFB52A03D389002EF2F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E8AF8D2A03D386002EF2F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E8AF942A03D386002EF2F4;
+			remoteInfo = "Yyussa Rent";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yyussa Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentApp.swift; sourceTree = "<group>"; };
+		D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0E8AF9F2A03D388002EF2F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0E8AFA12A03D388002EF2F4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D0E8AFA42A03D388002EF2F4 /* Yyussa_Rent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yyussa_Rent.xcdatamodel; sourceTree = "<group>"; };
+		D0E8AFAA2A03D389002EF2F4 /* Yyussa RentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yyussa RentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E8AFAE2A03D389002EF2F4 /* Yyussa_RentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentTests.swift; sourceTree = "<group>"; };
+		D0E8AFB42A03D389002EF2F4 /* Yyussa RentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yyussa RentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E8AFB82A03D389002EF2F4 /* Yyussa_RentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentUITests.swift; sourceTree = "<group>"; };
+		D0E8AFBA2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0E8AF922A03D386002EF2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFA72A03D389002EF2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFB12A03D389002EF2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0E8AF8C2A03D386002EF2F4 = {
+			isa = PBXGroup;
+			children = (
+				D0E8AF972A03D386002EF2F4 /* Yyussa Rent */,
+				D0E8AFAD2A03D389002EF2F4 /* Yyussa RentTests */,
+				D0E8AFB72A03D389002EF2F4 /* Yyussa RentUITests */,
+				D0E8AF962A03D386002EF2F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E8AF962A03D386002EF2F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */,
+				D0E8AFAA2A03D389002EF2F4 /* Yyussa RentTests.xctest */,
+				D0E8AFB42A03D389002EF2F4 /* Yyussa RentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E8AF972A03D386002EF2F4 /* Yyussa Rent */ = {
+			isa = PBXGroup;
+			children = (
+				D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */,
+				D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */,
+				D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */,
+				D0E8AFA12A03D388002EF2F4 /* Persistence.swift */,
+				D0E8AFA32A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld */,
+				D0E8AF9E2A03D388002EF2F4 /* Preview Content */,
+			);
+			path = "Yyussa Rent";
+			sourceTree = "<group>";
+		};
+		D0E8AF9E2A03D388002EF2F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0E8AF9F2A03D388002EF2F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0E8AFAD2A03D389002EF2F4 /* Yyussa RentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0E8AFAE2A03D389002EF2F4 /* Yyussa_RentTests.swift */,
+			);
+			path = "Yyussa RentTests";
+			sourceTree = "<group>";
+		};
+		D0E8AFB72A03D389002EF2F4 /* Yyussa RentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0E8AFB82A03D389002EF2F4 /* Yyussa_RentUITests.swift */,
+				D0E8AFBA2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift */,
+			);
+			path = "Yyussa RentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0E8AF942A03D386002EF2F4 /* Yyussa Rent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E8AFBE2A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa Rent" */;
+			buildPhases = (
+				D0E8AF912A03D386002EF2F4 /* Sources */,
+				D0E8AF922A03D386002EF2F4 /* Frameworks */,
+				D0E8AF932A03D386002EF2F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yyussa Rent";
+			productName = "Yyussa Rent";
+			productReference = D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0E8AFA92A03D389002EF2F4 /* Yyussa RentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E8AFC12A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentTests" */;
+			buildPhases = (
+				D0E8AFA62A03D389002EF2F4 /* Sources */,
+				D0E8AFA72A03D389002EF2F4 /* Frameworks */,
+				D0E8AFA82A03D389002EF2F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E8AFAC2A03D389002EF2F4 /* PBXTargetDependency */,
+			);
+			name = "Yyussa RentTests";
+			productName = "Yyussa RentTests";
+			productReference = D0E8AFAA2A03D389002EF2F4 /* Yyussa RentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0E8AFB32A03D389002EF2F4 /* Yyussa RentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E8AFC42A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentUITests" */;
+			buildPhases = (
+				D0E8AFB02A03D389002EF2F4 /* Sources */,
+				D0E8AFB12A03D389002EF2F4 /* Frameworks */,
+				D0E8AFB22A03D389002EF2F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E8AFB62A03D389002EF2F4 /* PBXTargetDependency */,
+			);
+			name = "Yyussa RentUITests";
+			productName = "Yyussa RentUITests";
+			productReference = D0E8AFB42A03D389002EF2F4 /* Yyussa RentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E8AF8D2A03D386002EF2F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D0E8AF942A03D386002EF2F4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					D0E8AFA92A03D389002EF2F4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D0E8AF942A03D386002EF2F4;
+					};
+					D0E8AFB32A03D389002EF2F4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D0E8AF942A03D386002EF2F4;
+					};
+				};
+			};
+			buildConfigurationList = D0E8AF902A03D386002EF2F4 /* Build configuration list for PBXProject "Yyussa Rent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0E8AF8C2A03D386002EF2F4;
+			productRefGroup = D0E8AF962A03D386002EF2F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E8AF942A03D386002EF2F4 /* Yyussa Rent */,
+				D0E8AFA92A03D389002EF2F4 /* Yyussa RentTests */,
+				D0E8AFB32A03D389002EF2F4 /* Yyussa RentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0E8AF932A03D386002EF2F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E8AFA02A03D388002EF2F4 /* Preview Assets.xcassets in Resources */,
+				D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFA82A03D389002EF2F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFB22A03D389002EF2F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E8AF912A03D386002EF2F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E8AFA22A03D388002EF2F4 /* Persistence.swift in Sources */,
+				D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */,
+				D0E8AFA52A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld in Sources */,
+				D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFA62A03D389002EF2F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E8AFAF2A03D389002EF2F4 /* Yyussa_RentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E8AFB02A03D389002EF2F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E8AFB92A03D389002EF2F4 /* Yyussa_RentUITests.swift in Sources */,
+				D0E8AFBB2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E8AFAC2A03D389002EF2F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E8AF942A03D386002EF2F4 /* Yyussa Rent */;
+			targetProxy = D0E8AFAB2A03D389002EF2F4 /* PBXContainerItemProxy */;
+		};
+		D0E8AFB62A03D389002EF2F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E8AF942A03D386002EF2F4 /* Yyussa Rent */;
+			targetProxy = D0E8AFB52A03D389002EF2F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0E8AFBC2A03D389002EF2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0E8AFBD2A03D389002EF2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0E8AFBF2A03D389002EF2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yyussa Rent/Preview Content\"";
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-Rent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0E8AFC02A03D389002EF2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yyussa Rent/Preview Content\"";
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-Rent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0E8AFC22A03D389002EF2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-RentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yyussa Rent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yyussa Rent";
+			};
+			name = Debug;
+		};
+		D0E8AFC32A03D389002EF2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-RentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yyussa Rent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yyussa Rent";
+			};
+			name = Release;
+		};
+		D0E8AFC52A03D389002EF2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-RentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yyussa Rent";
+			};
+			name = Debug;
+		};
+		D0E8AFC62A03D389002EF2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KYX3HSP2WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "itec.Yyussa-RentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yyussa Rent";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0E8AF902A03D386002EF2F4 /* Build configuration list for PBXProject "Yyussa Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E8AFBC2A03D389002EF2F4 /* Debug */,
+				D0E8AFBD2A03D389002EF2F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E8AFBE2A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E8AFBF2A03D389002EF2F4 /* Debug */,
+				D0E8AFC02A03D389002EF2F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E8AFC12A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E8AFC22A03D389002EF2F4 /* Debug */,
+				D0E8AFC32A03D389002EF2F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E8AFC42A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E8AFC52A03D389002EF2F4 /* Debug */,
+				D0E8AFC62A03D389002EF2F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0E8AFA32A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0E8AFA42A03D388002EF2F4 /* Yyussa_Rent.xcdatamodel */,
+			);
+			currentVersion = D0E8AFA42A03D388002EF2F4 /* Yyussa_Rent.xcdatamodel */;
+			path = Yyussa_Rent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D0E8AF8D2A03D386002EF2F4 /* Project object */;
+}
