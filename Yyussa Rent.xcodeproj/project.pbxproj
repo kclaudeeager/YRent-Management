@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5019A1A5D9F1092424200EB6 /* Pods_Yyussa_Rent_Yyussa_RentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ABEFE85A469A12C90D1947 /* Pods_Yyussa_Rent_Yyussa_RentUITests.framework */; };
+		50BD38432251AF5A3D8A156D /* Pods_Yyussa_RentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9A81276A88653F293650C6 /* Pods_Yyussa_RentTests.framework */; };
+		D01BD5C32A08EAF1004D095F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5C22A08EAF1004D095F /* User.swift */; };
+		D01BD5C52A08EB9D004D095F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5C42A08EB9D004D095F /* Company.swift */; };
+		D01BD5C72A08EC0F004D095F /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5C62A08EC0F004D095F /* Invoice.swift */; };
+		D01BD5C92A08ECA9004D095F /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5C82A08ECA9004D095F /* Building.swift */; };
+		D01BD5CB2A08ECF0004D095F /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5CA2A08ECF0004D095F /* Payment.swift */; };
+		D01BD5CD2A08ED4B004D095F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5CC2A08ED4B004D095F /* Room.swift */; };
+		D01BD5D02A08EEF0004D095F /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5CF2A08EEF0004D095F /* UserRepository.swift */; };
+		D01BD5D22A08EF3F004D095F /* RentalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5D12A08EF3F004D095F /* RentalRepository.swift */; };
+		D01BD5D52A08F320004D095F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D01BD5D42A08F320004D095F /* Alamofire */; };
+		D01BD5D72A08F3AD004D095F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5D62A08F3AD004D095F /* ApiService.swift */; };
+		D01BD5DA2A08FC67004D095F /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5D92A08FC67004D095F /* UserRepositoryImpl.swift */; };
+		D01BD5DF2A08FF3F004D095F /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5DE2A08FF3E004D095F /* AppModule.swift */; };
+		D01BD5E12A090399004D095F /* RentalRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E02A090399004D095F /* RentalRepositoryImpl.swift */; };
+		D01BD5E32A0906E5004D095F /* AlamofireApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E22A0906E5004D095F /* AlamofireApiService.swift */; };
+		D01BD5E62A0911B2004D095F /* GetRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E52A0911B2004D095F /* GetRoomsUseCase.swift */; };
+		D01BD5E82A0911D6004D095F /* GetInvoicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E72A0911D6004D095F /* GetInvoicesUseCase.swift */; };
+		D01BD5EA2A091258004D095F /* GetPaymentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E92A091258004D095F /* GetPaymentsUseCase.swift */; };
+		D01BD5EC2A09126F004D095F /* GetBuildingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5EB2A09126F004D095F /* GetBuildingsUseCase.swift */; };
+		D01BD5EE2A091288004D095F /* GetUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5ED2A091288004D095F /* GetUserUseCase.swift */; };
+		D01BD5F22A091356004D095F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5F12A091356004D095F /* LoginUseCase.swift */; };
+		D01BD5F42A091485004D095F /* GetCompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5F32A091485004D095F /* GetCompanyUseCase.swift */; };
+		D01BD5F62A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5F52A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift */; };
+		D01BD5F82A0914BA004D095F /* GetDuePaymentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5F72A0914BA004D095F /* GetDuePaymentsUseCase.swift */; };
+		D01BD5FA2A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5F92A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift */; };
+		D01BD5FC2A09150B004D095F /* GetDueInvoicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5FB2A09150B004D095F /* GetDueInvoicesUseCase.swift */; };
+		D01BD5FE2A091522004D095F /* GetBuildingInvoicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5FD2A091522004D095F /* GetBuildingInvoicesUseCase.swift */; };
+		D01BD6002A09153B004D095F /* GetBuildingRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5FF2A09153B004D095F /* GetBuildingRoomsUseCase.swift */; };
+		D01BD6032A091A5E004D095F /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6022A091A5E004D095F /* ResultState.swift */; };
+		D01BD6052A093471004D095F /* GetAvailableRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6042A093471004D095F /* GetAvailableRoomsUseCase.swift */; };
+		D01BD6072A0934B8004D095F /* GetOccupiedRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */; };
+		D01BD6092A0939DC004D095F /* UseCasesProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */; };
+		D01BD60B2A093D19004D095F /* RentalUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD60A2A093D19004D095F /* RentalUseCases.swift */; };
 		D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */; };
 		D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */; };
 		D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */; };
@@ -16,6 +50,7 @@
 		D0E8AFAF2A03D389002EF2F4 /* Yyussa_RentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFAE2A03D389002EF2F4 /* Yyussa_RentTests.swift */; };
 		D0E8AFB92A03D389002EF2F4 /* Yyussa_RentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFB82A03D389002EF2F4 /* Yyussa_RentUITests.swift */; };
 		D0E8AFBB2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AFBA2A03D389002EF2F4 /* Yyussa_RentUITestsLaunchTests.swift */; };
+		DBE6338731AD203FE5DE244A /* Pods_Yyussa_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5149C033C848AF8DCBB961F8 /* Pods_Yyussa_Rent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +71,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E800142F5363225AA4049AD /* Pods-Yyussa Rent-Yyussa RentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa Rent-Yyussa RentUITests.release.xcconfig"; path = "Target Support Files/Pods-Yyussa Rent-Yyussa RentUITests/Pods-Yyussa Rent-Yyussa RentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E9A81276A88653F293650C6 /* Pods_Yyussa_RentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yyussa_RentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		348C55DE51DDB9B59226455B /* Pods-Yyussa RentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa RentTests.debug.xcconfig"; path = "Target Support Files/Pods-Yyussa RentTests/Pods-Yyussa RentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5149C033C848AF8DCBB961F8 /* Pods_Yyussa_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yyussa_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7332D388C6BCEAA7CBDCAF7A /* Pods-Yyussa RentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa RentTests.release.xcconfig"; path = "Target Support Files/Pods-Yyussa RentTests/Pods-Yyussa RentTests.release.xcconfig"; sourceTree = "<group>"; };
+		77BB2651C870F779C6B2CF9D /* Pods-Yyussa Rent-Yyussa RentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa Rent-Yyussa RentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Yyussa Rent-Yyussa RentUITests/Pods-Yyussa Rent-Yyussa RentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		911B5E017743A0053AF2D7FE /* Pods-Yyussa Rent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa Rent.release.xcconfig"; path = "Target Support Files/Pods-Yyussa Rent/Pods-Yyussa Rent.release.xcconfig"; sourceTree = "<group>"; };
+		BD3BE48E778C7110FB99AF90 /* Pods-Yyussa Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yyussa Rent.debug.xcconfig"; path = "Target Support Files/Pods-Yyussa Rent/Pods-Yyussa Rent.debug.xcconfig"; sourceTree = "<group>"; };
+		C9ABEFE85A469A12C90D1947 /* Pods_Yyussa_Rent_Yyussa_RentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yyussa_Rent_Yyussa_RentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01BD5C22A08EAF1004D095F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D01BD5C42A08EB9D004D095F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		D01BD5C62A08EC0F004D095F /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		D01BD5C82A08ECA9004D095F /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		D01BD5CA2A08ECF0004D095F /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		D01BD5CC2A08ED4B004D095F /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		D01BD5CF2A08EEF0004D095F /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		D01BD5D12A08EF3F004D095F /* RentalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalRepository.swift; sourceTree = "<group>"; };
+		D01BD5D62A08F3AD004D095F /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D01BD5D92A08FC67004D095F /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		D01BD5DE2A08FF3E004D095F /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		D01BD5E02A090399004D095F /* RentalRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalRepositoryImpl.swift; sourceTree = "<group>"; };
+		D01BD5E22A0906E5004D095F /* AlamofireApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiService.swift; sourceTree = "<group>"; };
+		D01BD5E52A0911B2004D095F /* GetRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoomsUseCase.swift; sourceTree = "<group>"; };
+		D01BD5E72A0911D6004D095F /* GetInvoicesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvoicesUseCase.swift; sourceTree = "<group>"; };
+		D01BD5E92A091258004D095F /* GetPaymentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPaymentsUseCase.swift; sourceTree = "<group>"; };
+		D01BD5EB2A09126F004D095F /* GetBuildingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingsUseCase.swift; sourceTree = "<group>"; };
+		D01BD5ED2A091288004D095F /* GetUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCase.swift; sourceTree = "<group>"; };
+		D01BD5F12A091356004D095F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		D01BD5F32A091485004D095F /* GetCompanyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCompanyUseCase.swift; sourceTree = "<group>"; };
+		D01BD5F52A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingDuePaymentsUseCase.swift; sourceTree = "<group>"; };
+		D01BD5F72A0914BA004D095F /* GetDuePaymentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDuePaymentsUseCase.swift; sourceTree = "<group>"; };
+		D01BD5F92A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingDueInvoicesUseCase.swift; sourceTree = "<group>"; };
+		D01BD5FB2A09150B004D095F /* GetDueInvoicesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDueInvoicesUseCase.swift; sourceTree = "<group>"; };
+		D01BD5FD2A091522004D095F /* GetBuildingInvoicesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingInvoicesUseCase.swift; sourceTree = "<group>"; };
+		D01BD5FF2A09153B004D095F /* GetBuildingRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingRoomsUseCase.swift; sourceTree = "<group>"; };
+		D01BD6022A091A5E004D095F /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		D01BD6042A093471004D095F /* GetAvailableRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAvailableRoomsUseCase.swift; sourceTree = "<group>"; };
+		D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOccupiedRoomsUseCase.swift; sourceTree = "<group>"; };
+		D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProtocals.swift; sourceTree = "<group>"; };
+		D01BD60A2A093D19004D095F /* RentalUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalUseCases.swift; sourceTree = "<group>"; };
 		D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yyussa Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentApp.swift; sourceTree = "<group>"; };
 		D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01BD5D52A08F320004D095F /* Alamofire in Frameworks */,
+				DBE6338731AD203FE5DE244A /* Pods_Yyussa_Rent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BD38432251AF5A3D8A156D /* Pods_Yyussa_RentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +147,136 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5019A1A5D9F1092424200EB6 /* Pods_Yyussa_Rent_Yyussa_RentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B34AF3A6AB1A1CA9EDCE2BA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5149C033C848AF8DCBB961F8 /* Pods_Yyussa_Rent.framework */,
+				C9ABEFE85A469A12C90D1947 /* Pods_Yyussa_Rent_Yyussa_RentUITests.framework */,
+				1E9A81276A88653F293650C6 /* Pods_Yyussa_RentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B90D367926E1D888C9DD0744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD3BE48E778C7110FB99AF90 /* Pods-Yyussa Rent.debug.xcconfig */,
+				911B5E017743A0053AF2D7FE /* Pods-Yyussa Rent.release.xcconfig */,
+				77BB2651C870F779C6B2CF9D /* Pods-Yyussa Rent-Yyussa RentUITests.debug.xcconfig */,
+				0E800142F5363225AA4049AD /* Pods-Yyussa Rent-Yyussa RentUITests.release.xcconfig */,
+				348C55DE51DDB9B59226455B /* Pods-Yyussa RentTests.debug.xcconfig */,
+				7332D388C6BCEAA7CBDCAF7A /* Pods-Yyussa RentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D01BD5BE2A08E95D004D095F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5D82A08FC56004D095F /* repository */,
+				D01BD5C12A08EAB1004D095F /* model */,
+				D01BD5D62A08F3AD004D095F /* ApiService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D01BD5BF2A08E973004D095F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5CE2A08EEA1004D095F /* repository */,
+				D01BD5E42A091148004D095F /* useCases */,
+				D01BD5E22A0906E5004D095F /* AlamofireApiService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D01BD5C02A08E981004D095F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D01BD5C12A08EAB1004D095F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5C22A08EAF1004D095F /* User.swift */,
+				D01BD5C42A08EB9D004D095F /* Company.swift */,
+				D01BD5C62A08EC0F004D095F /* Invoice.swift */,
+				D01BD5C82A08ECA9004D095F /* Building.swift */,
+				D01BD5CA2A08ECF0004D095F /* Payment.swift */,
+				D01BD5CC2A08ED4B004D095F /* Room.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D01BD5CE2A08EEA1004D095F /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5CF2A08EEF0004D095F /* UserRepository.swift */,
+				D01BD5D12A08EF3F004D095F /* RentalRepository.swift */,
+			);
+			name = repository;
+			path = ../Presentation/repository;
+			sourceTree = "<group>";
+		};
+		D01BD5D82A08FC56004D095F /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5D92A08FC67004D095F /* UserRepositoryImpl.swift */,
+				D01BD5E02A090399004D095F /* RentalRepositoryImpl.swift */,
+			);
+			name = repository;
+			path = ../Domain/repository;
+			sourceTree = "<group>";
+		};
+		D01BD5DB2A08FED7004D095F /* di */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5DE2A08FF3E004D095F /* AppModule.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		D01BD5E42A091148004D095F /* useCases */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD5E52A0911B2004D095F /* GetRoomsUseCase.swift */,
+				D01BD5E72A0911D6004D095F /* GetInvoicesUseCase.swift */,
+				D01BD5E92A091258004D095F /* GetPaymentsUseCase.swift */,
+				D01BD5EB2A09126F004D095F /* GetBuildingsUseCase.swift */,
+				D01BD5ED2A091288004D095F /* GetUserUseCase.swift */,
+				D01BD5F12A091356004D095F /* LoginUseCase.swift */,
+				D01BD5F32A091485004D095F /* GetCompanyUseCase.swift */,
+				D01BD5F52A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift */,
+				D01BD5F72A0914BA004D095F /* GetDuePaymentsUseCase.swift */,
+				D01BD5F92A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift */,
+				D01BD5FB2A09150B004D095F /* GetDueInvoicesUseCase.swift */,
+				D01BD5FD2A091522004D095F /* GetBuildingInvoicesUseCase.swift */,
+				D01BD5FF2A09153B004D095F /* GetBuildingRoomsUseCase.swift */,
+				D01BD6042A093471004D095F /* GetAvailableRoomsUseCase.swift */,
+				D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */,
+				D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */,
+				D01BD60A2A093D19004D095F /* RentalUseCases.swift */,
+			);
+			path = useCases;
+			sourceTree = "<group>";
+		};
+		D01BD6012A091A50004D095F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD6022A091A5E004D095F /* ResultState.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
 		D0E8AF8C2A03D386002EF2F4 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +284,8 @@
 				D0E8AFAD2A03D389002EF2F4 /* Yyussa RentTests */,
 				D0E8AFB72A03D389002EF2F4 /* Yyussa RentUITests */,
 				D0E8AF962A03D386002EF2F4 /* Products */,
+				B90D367926E1D888C9DD0744 /* Pods */,
+				B34AF3A6AB1A1CA9EDCE2BA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +302,11 @@
 		D0E8AF972A03D386002EF2F4 /* Yyussa Rent */ = {
 			isa = PBXGroup;
 			children = (
+				D01BD6012A091A50004D095F /* core */,
+				D01BD5DB2A08FED7004D095F /* di */,
+				D01BD5C02A08E981004D095F /* Presentation */,
+				D01BD5BF2A08E973004D095F /* Domain */,
+				D01BD5BE2A08E95D004D095F /* Data */,
 				D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */,
 				D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */,
 				D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */,
@@ -140,15 +349,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E8AFBE2A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa Rent" */;
 			buildPhases = (
+				95451A922927A6F6679CC36D /* [CP] Check Pods Manifest.lock */,
 				D0E8AF912A03D386002EF2F4 /* Sources */,
 				D0E8AF922A03D386002EF2F4 /* Frameworks */,
 				D0E8AF932A03D386002EF2F4 /* Resources */,
+				ABEC83B23AF59027A643E7B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Yyussa Rent";
+			packageProductDependencies = (
+				D01BD5D42A08F320004D095F /* Alamofire */,
+			);
 			productName = "Yyussa Rent";
 			productReference = D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E8AFC12A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentTests" */;
 			buildPhases = (
+				01EFBBEEF4D400B95C3E3B68 /* [CP] Check Pods Manifest.lock */,
 				D0E8AFA62A03D389002EF2F4 /* Sources */,
 				D0E8AFA72A03D389002EF2F4 /* Frameworks */,
 				D0E8AFA82A03D389002EF2F4 /* Resources */,
@@ -175,9 +390,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E8AFC42A03D389002EF2F4 /* Build configuration list for PBXNativeTarget "Yyussa RentUITests" */;
 			buildPhases = (
+				1C1E8F0D6CB617EEDF3EB1E7 /* [CP] Check Pods Manifest.lock */,
 				D0E8AFB02A03D389002EF2F4 /* Sources */,
 				D0E8AFB12A03D389002EF2F4 /* Frameworks */,
 				D0E8AFB22A03D389002EF2F4 /* Resources */,
+				A4896A71222E90590FC800D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +438,9 @@
 				Base,
 			);
 			mainGroup = D0E8AF8C2A03D386002EF2F4;
+			packageReferences = (
+				D01BD5D32A08F320004D095F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D0E8AF962A03D386002EF2F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,15 +478,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01EFBBEEF4D400B95C3E3B68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yyussa RentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C1E8F0D6CB617EEDF3EB1E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yyussa Rent-Yyussa RentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95451A922927A6F6679CC36D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yyussa Rent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4896A71222E90590FC800D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent-Yyussa RentUITests/Pods-Yyussa Rent-Yyussa RentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent-Yyussa RentUITests/Pods-Yyussa Rent-Yyussa RentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent-Yyussa RentUITests/Pods-Yyussa Rent-Yyussa RentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABEC83B23AF59027A643E7B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent/Pods-Yyussa Rent-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent/Pods-Yyussa Rent-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yyussa Rent/Pods-Yyussa Rent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0E8AF912A03D386002EF2F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01BD5D02A08EEF0004D095F /* UserRepository.swift in Sources */,
+				D01BD5E12A090399004D095F /* RentalRepositoryImpl.swift in Sources */,
+				D01BD5E32A0906E5004D095F /* AlamofireApiService.swift in Sources */,
+				D01BD5E82A0911D6004D095F /* GetInvoicesUseCase.swift in Sources */,
+				D01BD5DF2A08FF3F004D095F /* AppModule.swift in Sources */,
 				D0E8AFA22A03D388002EF2F4 /* Persistence.swift in Sources */,
+				D01BD5DA2A08FC67004D095F /* UserRepositoryImpl.swift in Sources */,
 				D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */,
 				D0E8AFA52A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld in Sources */,
+				D01BD5FC2A09150B004D095F /* GetDueInvoicesUseCase.swift in Sources */,
+				D01BD5EA2A091258004D095F /* GetPaymentsUseCase.swift in Sources */,
+				D01BD6002A09153B004D095F /* GetBuildingRoomsUseCase.swift in Sources */,
+				D01BD5C72A08EC0F004D095F /* Invoice.swift in Sources */,
+				D01BD5F62A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift in Sources */,
+				D01BD5CD2A08ED4B004D095F /* Room.swift in Sources */,
+				D01BD5C32A08EAF1004D095F /* User.swift in Sources */,
+				D01BD5D72A08F3AD004D095F /* ApiService.swift in Sources */,
+				D01BD5D22A08EF3F004D095F /* RentalRepository.swift in Sources */,
+				D01BD5F82A0914BA004D095F /* GetDuePaymentsUseCase.swift in Sources */,
+				D01BD6052A093471004D095F /* GetAvailableRoomsUseCase.swift in Sources */,
 				D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */,
+				D01BD6072A0934B8004D095F /* GetOccupiedRoomsUseCase.swift in Sources */,
+				D01BD5C52A08EB9D004D095F /* Company.swift in Sources */,
+				D01BD5EE2A091288004D095F /* GetUserUseCase.swift in Sources */,
+				D01BD6032A091A5E004D095F /* ResultState.swift in Sources */,
+				D01BD5F42A091485004D095F /* GetCompanyUseCase.swift in Sources */,
+				D01BD5F22A091356004D095F /* LoginUseCase.swift in Sources */,
+				D01BD5FE2A091522004D095F /* GetBuildingInvoicesUseCase.swift in Sources */,
+				D01BD5FA2A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift in Sources */,
+				D01BD5EC2A09126F004D095F /* GetBuildingsUseCase.swift in Sources */,
+				D01BD5E62A0911B2004D095F /* GetRoomsUseCase.swift in Sources */,
+				D01BD6092A0939DC004D095F /* UseCasesProtocals.swift in Sources */,
+				D01BD5CB2A08ECF0004D095F /* Payment.swift in Sources */,
+				D01BD5C92A08ECA9004D095F /* Building.swift in Sources */,
+				D01BD60B2A093D19004D095F /* RentalUseCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +773,7 @@
 		};
 		D0E8AFBF2A03D389002EF2F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3BE48E778C7110FB99AF90 /* Pods-Yyussa Rent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +803,7 @@
 		};
 		D0E8AFC02A03D389002EF2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 911B5E017743A0053AF2D7FE /* Pods-Yyussa Rent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +833,7 @@
 		};
 		D0E8AFC22A03D389002EF2F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348C55DE51DDB9B59226455B /* Pods-Yyussa RentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +854,7 @@
 		};
 		D0E8AFC32A03D389002EF2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7332D388C6BCEAA7CBDCAF7A /* Pods-Yyussa RentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +875,7 @@
 		};
 		D0E8AFC52A03D389002EF2F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BB2651C870F779C6B2CF9D /* Pods-Yyussa Rent-Yyussa RentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +894,7 @@
 		};
 		D0E8AFC62A03D389002EF2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E800142F5363225AA4049AD /* Pods-Yyussa Rent-Yyussa RentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +951,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D01BD5D32A08F320004D095F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D01BD5D42A08F320004D095F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D01BD5D32A08F320004D095F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D0E8AFA32A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld */ = {
