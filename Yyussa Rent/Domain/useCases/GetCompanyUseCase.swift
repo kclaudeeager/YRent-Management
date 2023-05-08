@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class GetCompanyUseCaseImpl:GetCompanyUseCase {
+    
+    private let userRepository: UserRepository
+    
+    init(userRepository: UserRepository) {
+        self.userRepository = userRepository
+    }
+    
+    func execute(companyId: String, completion: @escaping (ResultState<Company>) -> Void) {
+        userRepository.getCompany(companyId: companyId, completion: completion)
+    }
+}
