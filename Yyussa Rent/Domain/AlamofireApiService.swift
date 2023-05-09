@@ -21,12 +21,22 @@ class AlamofireApiService: ApiService {
           request(url: url, parameters: parameters, completion: completion)
        }
     
-    func login(username: String, password: String, completion: @escaping (ResultState<Data>) -> Void) {
+     func login(username: String, password: String, completion: @escaping (ResultState<Data>) -> Void) {
         let url = baseUrl + "login"
         let parameters = ["username": username, "password": password]
         
-        request(url: url, parameters: parameters, completion: completion)
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .validate()
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    completion(.success(content: data))
+                case .failure(let error):
+                    completion(.failure(error: error))
+                }
+            }
     }
+
 
     func getRooms(company_id: String, completion: @escaping (ResultState<[Room]>) -> Void) {
            let url = baseUrl + "rooms"
