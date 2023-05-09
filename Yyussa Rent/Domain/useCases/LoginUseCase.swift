@@ -15,8 +15,7 @@ class LoginUseCaseImpl : LoginUseCase {
         self.repository = repository
     }
     
-    func execute(username: String, password:String, completion: @escaping (ResultState<User>) -> Void){
-        
+    func execute(username: String, password: String, completion: @escaping (ResultState<User>) -> Void) {
         repository.login(username: username, password: password) { resultState in
             switch resultState {
             case .success(let data):
@@ -33,6 +32,8 @@ class LoginUseCaseImpl : LoginUseCase {
                 completion(.loading)
             }
         }
-        
+
     }
+
+
 }

@@ -20,7 +20,6 @@
 		D01BD5D52A08F320004D095F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D01BD5D42A08F320004D095F /* Alamofire */; };
 		D01BD5D72A08F3AD004D095F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5D62A08F3AD004D095F /* ApiService.swift */; };
 		D01BD5DA2A08FC67004D095F /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5D92A08FC67004D095F /* UserRepositoryImpl.swift */; };
-		D01BD5DF2A08FF3F004D095F /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5DE2A08FF3E004D095F /* AppModule.swift */; };
 		D01BD5E12A090399004D095F /* RentalRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E02A090399004D095F /* RentalRepositoryImpl.swift */; };
 		D01BD5E32A0906E5004D095F /* AlamofireApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E22A0906E5004D095F /* AlamofireApiService.swift */; };
 		D01BD5E62A0911B2004D095F /* GetRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD5E52A0911B2004D095F /* GetRoomsUseCase.swift */; };
@@ -41,6 +40,12 @@
 		D01BD6072A0934B8004D095F /* GetOccupiedRoomsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */; };
 		D01BD6092A0939DC004D095F /* UseCasesProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */; };
 		D01BD60B2A093D19004D095F /* RentalUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD60A2A093D19004D095F /* RentalUseCases.swift */; };
+		D01BD60F2A0A2D1C004D095F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD60E2A0A2D1C004D095F /* BaseViewModel.swift */; };
+		D01BD6112A0A2D7A004D095F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6102A0A2D7A004D095F /* LoginViewModel.swift */; };
+		D01BD6132A0A2F7F004D095F /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6122A0A2F7F004D095F /* LoginState.swift */; };
+		D01BD6182A0A374D004D095F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6172A0A374D004D095F /* LoginView.swift */; };
+		D01BD6252A0A6758004D095F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6242A0A6758004D095F /* DependencyContainer.swift */; };
+		D07AAB322A0A7FC3002B546D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB312A0A7FC3002B546D /* Color.swift */; };
 		D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */; };
 		D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */; };
 		D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */; };
@@ -90,7 +95,6 @@
 		D01BD5D12A08EF3F004D095F /* RentalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalRepository.swift; sourceTree = "<group>"; };
 		D01BD5D62A08F3AD004D095F /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		D01BD5D92A08FC67004D095F /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
-		D01BD5DE2A08FF3E004D095F /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		D01BD5E02A090399004D095F /* RentalRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalRepositoryImpl.swift; sourceTree = "<group>"; };
 		D01BD5E22A0906E5004D095F /* AlamofireApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiService.swift; sourceTree = "<group>"; };
 		D01BD5E52A0911B2004D095F /* GetRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoomsUseCase.swift; sourceTree = "<group>"; };
@@ -111,6 +115,12 @@
 		D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOccupiedRoomsUseCase.swift; sourceTree = "<group>"; };
 		D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProtocals.swift; sourceTree = "<group>"; };
 		D01BD60A2A093D19004D095F /* RentalUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalUseCases.swift; sourceTree = "<group>"; };
+		D01BD60E2A0A2D1C004D095F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D01BD6102A0A2D7A004D095F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D01BD6122A0A2F7F004D095F /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		D01BD6172A0A374D004D095F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D01BD6242A0A6758004D095F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		D07AAB312A0A7FC3002B546D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yyussa Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentApp.swift; sourceTree = "<group>"; };
 		D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +210,9 @@
 		D01BD5C02A08E981004D095F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D01BD60D2A0A2D01004D095F /* rent */,
+				D01BD60C2A0A2CF0004D095F /* user */,
+				D01BD60E2A0A2D1C004D095F /* BaseViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -240,7 +253,7 @@
 		D01BD5DB2A08FED7004D095F /* di */ = {
 			isa = PBXGroup;
 			children = (
-				D01BD5DE2A08FF3E004D095F /* AppModule.swift */,
+				D01BD6242A0A6758004D095F /* DependencyContainer.swift */,
 			);
 			path = di;
 			sourceTree = "<group>";
@@ -277,6 +290,31 @@
 			path = core;
 			sourceTree = "<group>";
 		};
+		D01BD60C2A0A2CF0004D095F /* user */ = {
+			isa = PBXGroup;
+			children = (
+				D01BD6102A0A2D7A004D095F /* LoginViewModel.swift */,
+				D01BD6122A0A2F7F004D095F /* LoginState.swift */,
+				D01BD6172A0A374D004D095F /* LoginView.swift */,
+				D07AAB312A0A7FC3002B546D /* Color.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		D01BD60D2A0A2D01004D095F /* rent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rent;
+			sourceTree = "<group>";
+		};
+		D01BD6192A0A40C4004D095F /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
 		D0E8AF8C2A03D386002EF2F4 = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +340,7 @@
 		D0E8AF972A03D386002EF2F4 /* Yyussa Rent */ = {
 			isa = PBXGroup;
 			children = (
+				D01BD6192A0A40C4004D095F /* Supporting File */,
 				D01BD6012A091A50004D095F /* core */,
 				D01BD5DB2A08FED7004D095F /* di */,
 				D01BD5C02A08E981004D095F /* Presentation */,
@@ -590,7 +629,7 @@
 				D01BD5E12A090399004D095F /* RentalRepositoryImpl.swift in Sources */,
 				D01BD5E32A0906E5004D095F /* AlamofireApiService.swift in Sources */,
 				D01BD5E82A0911D6004D095F /* GetInvoicesUseCase.swift in Sources */,
-				D01BD5DF2A08FF3F004D095F /* AppModule.swift in Sources */,
+				D01BD60F2A0A2D1C004D095F /* BaseViewModel.swift in Sources */,
 				D0E8AFA22A03D388002EF2F4 /* Persistence.swift in Sources */,
 				D01BD5DA2A08FC67004D095F /* UserRepositoryImpl.swift in Sources */,
 				D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */,
@@ -599,6 +638,7 @@
 				D01BD5EA2A091258004D095F /* GetPaymentsUseCase.swift in Sources */,
 				D01BD6002A09153B004D095F /* GetBuildingRoomsUseCase.swift in Sources */,
 				D01BD5C72A08EC0F004D095F /* Invoice.swift in Sources */,
+				D07AAB322A0A7FC3002B546D /* Color.swift in Sources */,
 				D01BD5F62A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift in Sources */,
 				D01BD5CD2A08ED4B004D095F /* Room.swift in Sources */,
 				D01BD5C32A08EAF1004D095F /* User.swift in Sources */,
@@ -614,13 +654,17 @@
 				D01BD5F42A091485004D095F /* GetCompanyUseCase.swift in Sources */,
 				D01BD5F22A091356004D095F /* LoginUseCase.swift in Sources */,
 				D01BD5FE2A091522004D095F /* GetBuildingInvoicesUseCase.swift in Sources */,
+				D01BD6112A0A2D7A004D095F /* LoginViewModel.swift in Sources */,
 				D01BD5FA2A0914D7004D095F /* GetBuildingDueInvoicesUseCase.swift in Sources */,
 				D01BD5EC2A09126F004D095F /* GetBuildingsUseCase.swift in Sources */,
 				D01BD5E62A0911B2004D095F /* GetRoomsUseCase.swift in Sources */,
 				D01BD6092A0939DC004D095F /* UseCasesProtocals.swift in Sources */,
 				D01BD5CB2A08ECF0004D095F /* Payment.swift in Sources */,
 				D01BD5C92A08ECA9004D095F /* Building.swift in Sources */,
+				D01BD6182A0A374D004D095F /* LoginView.swift in Sources */,
 				D01BD60B2A093D19004D095F /* RentalUseCases.swift in Sources */,
+				D01BD6252A0A6758004D095F /* DependencyContainer.swift in Sources */,
+				D01BD6132A0A2F7F004D095F /* LoginState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

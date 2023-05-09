@@ -17,5 +17,6 @@ target 'Yyussa Rent' do
   end
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'Cleanse'
+
+
 end
