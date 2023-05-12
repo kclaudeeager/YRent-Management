@@ -12,12 +12,13 @@ struct ContentView: View {
     @State private var isPresentingLogin = false
     let dependencyContainer = DependencyContainer()
     var body: some View {
-        Button("Show Login") {
-            isPresentingLogin = true
-        }
-        .sheet(isPresented: $isPresentingLogin) {
-            LoginView(viewModel: dependencyContainer.loginViewModel)
-        }
+        LoginView(viewModel: dependencyContainer.loginViewModel)
+
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
 

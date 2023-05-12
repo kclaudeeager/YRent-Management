@@ -52,6 +52,8 @@ class LoginViewModel: BaseViewModel {
                 self.state = .failure(error)
             case .loading:
                 self.state = .loading
+            case .idle:
+                self.state = .idle
             }
         }
     }

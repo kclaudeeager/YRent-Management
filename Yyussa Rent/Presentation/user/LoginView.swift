@@ -7,14 +7,13 @@
 
 import Foundation
 import SwiftUI
-import ToastUI
 
 struct LoginView: View {
     
     @ObservedObject var viewModel: LoginViewModel
     
     @State private var isShowingProgress = false
-    
+    @State private var showPassword = false
     init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
     }
@@ -38,12 +37,25 @@ struct LoginView: View {
                         .foregroundColor(.loginBackground1)
                       
 
-                    
-                    SecureField("Password", text: $viewModel.password)
-                        .padding(15)
+                    HStack {
+                            if showPassword {
+                                        TextField("Password", text: $viewModel.password)
+                                                   
+                                            } else {
+                                                SecureField("Password", text: $viewModel.password)
+                                                   
+                                            }
+                                            Button(action: {
+                                                showPassword.toggle()
+                                            }) {
+                                                Image(systemName: showPassword ? "eye.slash.fill" : "eye.fill")
+                                                    .foregroundColor(.gray)
+                                            }
+                                        }.padding(15)
                         .background(Color.white)
                         .cornerRadius(10)
                         .foregroundColor(.loginBackground2)
+                  
                 }
                 
                 Button(action: {
@@ -95,11 +107,30 @@ struct LoginView: View {
 
         }.onChange(of: viewModel.state) { state in
             switch state {
-            case .idle, .success, .failure:
+            case .idle, .failure:
                 isShowingProgress = false
             case .loading:
                 isShowingProgress = true
+            case .success(let user):
+                DispatchQueue.main.async {
+                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                        let mainWindow = windowScene.windows.first(where: { $0.isKeyWindow }) else {
+                            fatalError("Unable to retrieve main window")
+                        
+                    }
+                    let dependencyContainer = DependencyContainer()
+                    let rentalViewModel = dependencyContainer.rentalViewModel
+                    let userViewModel = dependencyContainer.userViewModel
+                    
+                    let mainView = MainView(viewModel: rentalViewModel, userViewModel:userViewModel, user: user ,userId:user.acc_id, companyId: user.co_id)
+                    let homePageViewController = UIHostingController(rootView: mainView)
+                    mainWindow.rootViewController = UINavigationController(rootViewController: homePageViewController)
+                }
+                isShowingProgress = false
+                break
+                
             }
+      
         }
 
     }
