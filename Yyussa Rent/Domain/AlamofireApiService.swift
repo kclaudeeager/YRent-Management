@@ -30,9 +30,9 @@ class AlamofireApiService: ApiService {
             .responseData { response in
                 switch response.result {
                 case .success(let data):
-                    completion(.success(content: data))
+                    completion(.success(data))
                 case .failure(let error):
-                    completion(.failure(error: error))
+                    completion(.failure(error))
                 }
             }
     }
@@ -66,14 +66,14 @@ class AlamofireApiService: ApiService {
     
     func getDueInvoices(company_id: String, date: String, completion: @escaping (ResultState<[Invoice]>) -> Void) {
         let url = baseUrl + "due_invoices"
-        let parameters = ["company_id": company_id]
+        let parameters = ["company_id": company_id,"date": date]
         request(url: url, parameters: parameters, completion: completion)
     }
     
     func getBuildingDueInvoices(bu_id: String, date: String, completion: @escaping (ResultState<[Invoice]>) -> Void) {
         
         let url = baseUrl + "due_invoices"
-        let parameters = ["bu_id": bu_id]
+        let parameters = ["bu_id": bu_id,"date": date]
         
         request(url: url, parameters: parameters, completion: completion)
     }
@@ -87,14 +87,14 @@ class AlamofireApiService: ApiService {
     func getDuePayments(company_id: String, date: String, completion: @escaping (ResultState<[Payment]>) -> Void) {
         
         let url = baseUrl + "due_payments"
-        let parameters = ["company_id": company_id]
+        let parameters = ["company_id": company_id,"date": date]
         request(url: url, parameters: parameters, completion: completion)
     }
     
     func getBuildingDuePayments(bu_id: String, date: String, completion: @escaping (ResultState<[Payment]>) -> Void) {
         
         let url = baseUrl + "due_payments"
-        let parameters = ["bu_id": bu_id]
+        let parameters = ["bu_id": bu_id,"date": date]
         request(url: url, parameters: parameters, completion: completion)
     }
     
@@ -116,11 +116,13 @@ class AlamofireApiService: ApiService {
         AF.request(url, method: method, parameters: parameters)
             .validate()
             .responseDecodable(of: T.self) { response in
+               
                 switch response.result {
                 case .success(let value):
-                    completion(.success(content: value))
+                    completion(.success(value))
                 case .failure(let error):
-                    completion(.failure(error: error))
+                    print("Decoding error: \(error.localizedDescription)")
+                    completion(.failure(error))
                 }
             }
     }

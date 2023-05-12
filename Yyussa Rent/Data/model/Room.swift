@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Room:Decodable{
-    let id: Int
+struct Room:Decodable,Equatable,Identifiable{
+    let id: String
     let name: String
     let isOccupied: Bool
 }

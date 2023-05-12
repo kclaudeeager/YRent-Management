@@ -8,6 +8,42 @@
 import Foundation
 
 class RentalRepositoryImpl: RentalRepository  {
+    func getBuildingAvailableRooms(buildingId: String, completion: @escaping (ResultState<[Room]>) -> Void) {
+        apiService.getBuildingRooms(bu_id: buildingId){ resultState in
+            switch resultState{
+            case .success(let rooms):
+                let availableRooms = rooms.filter { !$0.isOccupied }
+                completion(.success(availableRooms))
+                
+            case .failure(let error):
+                completion(.failure(error))
+            case .loading:
+                completion(.loading)
+            case .idle:
+                completion(.idle)
+            }
+
+        }
+    }
+    
+    func getBuildingOccupiedRooms(buildingId: String, completion: @escaping (ResultState<[Room]>) -> Void) {
+        apiService.getBuildingRooms(bu_id: buildingId){ resultState in
+            switch resultState{
+            case .success(let rooms):
+                let availableRooms = rooms.filter { $0.isOccupied }
+                completion(.success(availableRooms))
+                
+            case .failure(let error):
+                completion(.failure(error))
+            case .loading:
+                completion(.loading)
+            case .idle:
+                completion(.idle)
+            }
+
+        }
+    }
+    
 
     private let apiService: ApiService
     
@@ -24,12 +60,14 @@ class RentalRepositoryImpl: RentalRepository  {
             switch resultState{
             case .success(let rooms):
                 let availableRooms = rooms.filter { !$0.isOccupied }
-                completion(.success(content:availableRooms))
+                completion(.success(availableRooms))
                 
             case .failure(let error):
-                completion(.failure(error: error))
+                completion(.failure(error))
             case .loading:
                 completion(.loading)
+            case .idle:
+                completion(.idle)
             }
 
         }
@@ -40,12 +78,14 @@ class RentalRepositoryImpl: RentalRepository  {
             switch resultState{
             case .success(let rooms):
                 let availableRooms = rooms.filter { $0.isOccupied }
-                completion(.success(content:availableRooms))
+                completion(.success(availableRooms))
                 
             case .failure(let error):
-                completion(.failure(error: error))
+                completion(.failure(error))
             case .loading:
                 completion(.loading)
+            case .idle:
+                completion(.idle)
             }
 
         }
@@ -53,13 +93,16 @@ class RentalRepositoryImpl: RentalRepository  {
     
     func getInvoices(companyId: String, completion: @escaping (ResultState<[Invoice]>) -> Void) {
         apiService.getInvoices(company_id: companyId) { resultState in
+        
             switch resultState{
             case .success(let invoices):
-                completion(.success(content: invoices))
+                completion(.success(invoices))
             case .failure(let error):
-                completion(.failure(error: error))
+                completion(.failure(error))
             case .loading:
                 completion(.loading)
+            case .idle:
+                completion(.idle)
             }
            
         }
