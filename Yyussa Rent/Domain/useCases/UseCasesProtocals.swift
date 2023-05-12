@@ -66,3 +66,11 @@ protocol GetAvailableRoomsUseCase{
 protocol GetOccupiedRoomsUseCase{
     func execute(companyId: String, completion: @escaping (ResultState<[Room]>) -> Void)
 }
+
+protocol GetBuildingAvailableRoomsUseCase{
+    func execute(buId: String, completion: @escaping (ResultState<[Room]>) -> Void)
+}
+
+protocol GetBuildingOccupiedRoomsUseCase{
+    func execute(buId: String, completion: @escaping (ResultState<[Room]>) -> Void)
+}

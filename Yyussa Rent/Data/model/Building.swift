@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Building:Decodable{
-    let id:Int
-    let name:String
-    let address:String
+struct Building: Decodable, Identifiable, Equatable {
+    let id: String
+    let name: String
+    let address: String
 }

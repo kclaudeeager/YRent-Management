@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Decodable {
+struct User: Decodable,Equatable {
     let acc_id: String
     let l_name: String
     let f_name: String

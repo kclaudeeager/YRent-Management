@@ -46,6 +46,31 @@
 		D01BD6182A0A374D004D095F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6172A0A374D004D095F /* LoginView.swift */; };
 		D01BD6252A0A6758004D095F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6242A0A6758004D095F /* DependencyContainer.swift */; };
 		D07AAB322A0A7FC3002B546D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB312A0A7FC3002B546D /* Color.swift */; };
+		D07AAB342A0B72FF002B546D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB332A0B72FF002B546D /* UserViewModel.swift */; };
+		D07AAB362A0B7A79002B546D /* RentalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB352A0B7A79002B546D /* RentalViewModel.swift */; };
+		D07AAB382A0B81CB002B546D /* DasboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB372A0B81CB002B546D /* DasboardState.swift */; };
+		D07AAB3A2A0B8B8B002B546D /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB392A0B8B8B002B546D /* Screen.swift */; };
+		D07AAB3D2A0B8F48002B546D /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB3C2A0B8F48002B546D /* BottomNavigationBar.swift */; };
+		D0A1166A2A0BBF9000A0A70E /* GetBuildingAvailableRoomsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A116692A0BBF9000A0A70E /* GetBuildingAvailableRoomsUseCaseImpl.swift */; };
+		D0A1166C2A0BC02800A0A70E /* GetBuildingOccupiedRoomsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1166B2A0BC02800A0A70E /* GetBuildingOccupiedRoomsUseCaseImpl.swift */; };
+		D0A1166E2A0BE43500A0A70E /* ScreenContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1166D2A0BE43500A0A70E /* ScreenContainerView.swift */; };
+		D0A116702A0BE4B400A0A70E /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1166F2A0BE4B400A0A70E /* NavController.swift */; };
+		D0A116722A0BE5CE00A0A70E /* DialogBoxLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A116712A0BE5CE00A0A70E /* DialogBoxLoading.swift */; };
+		D0A116742A0BEA4500A0A70E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A116732A0BEA4500A0A70E /* MainScreen.swift */; };
+		D0A116782A0CD92000A0A70E /*   BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A116772A0CD92000A0A70E /*   BoxView.swift */; };
+		D0A1167A2A0CE3D200A0A70E /* TopNavigationDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A116792A0CE3D200A0A70E /* TopNavigationDrawer.swift */; };
+		D0A1167C2A0CE3E900A0A70E /* ProfileAndSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1167B2A0CE3E900A0A70E /* ProfileAndSettings.swift */; };
+		D0A1167E2A0CE3F600A0A70E /* ProfileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1167D2A0CE3F600A0A70E /* ProfileDetails.swift */; };
+		D0A116802A0D2B9600A0A70E /* YearMonthDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1167F2A0D2B9600A0A70E /* YearMonthDatePicker.swift */; };
+		D0AAFC2E2A0B974200046385 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC2D2A0B974200046385 /* HomeScreen.swift */; };
+		D0AAFC302A0B985C00046385 /* InfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC2F2A0B985C00046385 /* InfoDialog.swift */; };
+		D0AAFC332A0BA31E00046385 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC322A0BA31E00046385 /* CardInfoView.swift */; };
+		D0AAFC352A0BA7A700046385 /* BuildingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC342A0BA7A700046385 /* BuildingCard.swift */; };
+		D0AAFC372A0BA85700046385 /* BuildingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC362A0BA85700046385 /* BuildingsList.swift */; };
+		D0AAFC3A2A0BB2A700046385 /* AllRoomsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC392A0BB2A700046385 /* AllRoomsScreen.swift */; };
+		D0AAFC3E2A0BB8FF00046385 /* buildCardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAFC3D2A0BB8FF00046385 /* buildCardInfoView.swift */; };
+		D0B4F8BF2A0E6D1B002D4CC6 /* DateSelectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4F8BE2A0E6D1B002D4CC6 /* DateSelectionService.swift */; };
+		D0CA15C82A0E3D3F005BE082 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = D0CA15C72A0E3D3F005BE082 /* Shimmer */; };
 		D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */; };
 		D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */; };
 		D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */; };
@@ -121,6 +146,30 @@
 		D01BD6172A0A374D004D095F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D01BD6242A0A6758004D095F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		D07AAB312A0A7FC3002B546D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D07AAB332A0B72FF002B546D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		D07AAB352A0B7A79002B546D /* RentalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalViewModel.swift; sourceTree = "<group>"; };
+		D07AAB372A0B81CB002B546D /* DasboardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasboardState.swift; sourceTree = "<group>"; };
+		D07AAB392A0B8B8B002B546D /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		D07AAB3C2A0B8F48002B546D /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
+		D0A116692A0BBF9000A0A70E /* GetBuildingAvailableRoomsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingAvailableRoomsUseCaseImpl.swift; sourceTree = "<group>"; };
+		D0A1166B2A0BC02800A0A70E /* GetBuildingOccupiedRoomsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingOccupiedRoomsUseCaseImpl.swift; sourceTree = "<group>"; };
+		D0A1166D2A0BE43500A0A70E /* ScreenContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenContainerView.swift; sourceTree = "<group>"; };
+		D0A1166F2A0BE4B400A0A70E /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		D0A116712A0BE5CE00A0A70E /* DialogBoxLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBoxLoading.swift; sourceTree = "<group>"; };
+		D0A116732A0BEA4500A0A70E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		D0A116772A0CD92000A0A70E /*   BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "  BoxView.swift"; sourceTree = "<group>"; };
+		D0A116792A0CE3D200A0A70E /* TopNavigationDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationDrawer.swift; sourceTree = "<group>"; };
+		D0A1167B2A0CE3E900A0A70E /* ProfileAndSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAndSettings.swift; sourceTree = "<group>"; };
+		D0A1167D2A0CE3F600A0A70E /* ProfileDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetails.swift; sourceTree = "<group>"; };
+		D0A1167F2A0D2B9600A0A70E /* YearMonthDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthDatePicker.swift; sourceTree = "<group>"; };
+		D0AAFC2D2A0B974200046385 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		D0AAFC2F2A0B985C00046385 /* InfoDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDialog.swift; sourceTree = "<group>"; };
+		D0AAFC322A0BA31E00046385 /* CardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoView.swift; sourceTree = "<group>"; };
+		D0AAFC342A0BA7A700046385 /* BuildingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingCard.swift; sourceTree = "<group>"; };
+		D0AAFC362A0BA85700046385 /* BuildingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsList.swift; sourceTree = "<group>"; };
+		D0AAFC392A0BB2A700046385 /* AllRoomsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRoomsScreen.swift; sourceTree = "<group>"; };
+		D0AAFC3D2A0BB8FF00046385 /* buildCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildCardInfoView.swift; sourceTree = "<group>"; };
+		D0B4F8BE2A0E6D1B002D4CC6 /* DateSelectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionService.swift; sourceTree = "<group>"; };
 		D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yyussa Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yyussa_RentApp.swift; sourceTree = "<group>"; };
 		D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CA15C82A0E3D3F005BE082 /* Shimmer in Frameworks */,
 				D01BD5D52A08F320004D095F /* Alamofire in Frameworks */,
 				DBE6338731AD203FE5DE244A /* Pods_Yyussa_Rent.framework in Frameworks */,
 			);
@@ -210,9 +260,13 @@
 		D01BD5C02A08E981004D095F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D0AAFC312A0BA2BD00046385 /* components */,
+				D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */,
 				D01BD60D2A0A2D01004D095F /* rent */,
 				D01BD60C2A0A2CF0004D095F /* user */,
 				D01BD60E2A0A2D1C004D095F /* BaseViewModel.swift */,
+				D07AAB392A0B8B8B002B546D /* Screen.swift */,
+				D0A116732A0BEA4500A0A70E /* MainScreen.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -278,6 +332,8 @@
 				D01BD6062A0934B8004D095F /* GetOccupiedRoomsUseCase.swift */,
 				D01BD6082A0939DC004D095F /* UseCasesProtocals.swift */,
 				D01BD60A2A093D19004D095F /* RentalUseCases.swift */,
+				D0A116692A0BBF9000A0A70E /* GetBuildingAvailableRoomsUseCaseImpl.swift */,
+				D0A1166B2A0BC02800A0A70E /* GetBuildingOccupiedRoomsUseCaseImpl.swift */,
 			);
 			path = useCases;
 			sourceTree = "<group>";
@@ -297,6 +353,7 @@
 				D01BD6122A0A2F7F004D095F /* LoginState.swift */,
 				D01BD6172A0A374D004D095F /* LoginView.swift */,
 				D07AAB312A0A7FC3002B546D /* Color.swift */,
+				D07AAB332A0B72FF002B546D /* UserViewModel.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -304,6 +361,10 @@
 		D01BD60D2A0A2D01004D095F /* rent */ = {
 			isa = PBXGroup;
 			children = (
+				D0B4F8BD2A0E6D0B002D4CC6 /* util */,
+				D07AAB3B2A0B8F2F002B546D /* components */,
+				D07AAB352A0B7A79002B546D /* RentalViewModel.swift */,
+				D07AAB372A0B81CB002B546D /* DasboardState.swift */,
 			);
 			path = rent;
 			sourceTree = "<group>";
@@ -311,8 +372,54 @@
 		D01BD6192A0A40C4004D095F /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				D0A1166F2A0BE4B400A0A70E /* NavController.swift */,
 			);
 			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		D07AAB3B2A0B8F2F002B546D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAFC382A0BB27F00046385 /* homeScreenCards */,
+				D07AAB3C2A0B8F48002B546D /* BottomNavigationBar.swift */,
+				D0AAFC2D2A0B974200046385 /* HomeScreen.swift */,
+				D0AAFC342A0BA7A700046385 /* BuildingCard.swift */,
+				D0AAFC362A0BA85700046385 /* BuildingsList.swift */,
+				D0A1166D2A0BE43500A0A70E /* ScreenContainerView.swift */,
+				D0A116792A0CE3D200A0A70E /* TopNavigationDrawer.swift */,
+				D0A1167B2A0CE3E900A0A70E /* ProfileAndSettings.swift */,
+				D0A1167D2A0CE3F600A0A70E /* ProfileDetails.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		D0AAFC312A0BA2BD00046385 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAFC2F2A0B985C00046385 /* InfoDialog.swift */,
+				D0AAFC322A0BA31E00046385 /* CardInfoView.swift */,
+				D0A116712A0BE5CE00A0A70E /* DialogBoxLoading.swift */,
+				D0A116772A0CD92000A0A70E /*   BoxView.swift */,
+				D0A1167F2A0D2B9600A0A70E /* YearMonthDatePicker.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		D0AAFC382A0BB27F00046385 /* homeScreenCards */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAFC392A0BB2A700046385 /* AllRoomsScreen.swift */,
+				D0AAFC3D2A0BB8FF00046385 /* buildCardInfoView.swift */,
+			);
+			path = homeScreenCards;
+			sourceTree = "<group>";
+		};
+		D0B4F8BD2A0E6D0B002D4CC6 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D0B4F8BE2A0E6D1B002D4CC6 /* DateSelectionService.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		D0E8AF8C2A03D386002EF2F4 = {
@@ -347,7 +454,6 @@
 				D01BD5BF2A08E973004D095F /* Domain */,
 				D01BD5BE2A08E95D004D095F /* Data */,
 				D0E8AF982A03D386002EF2F4 /* Yyussa_RentApp.swift */,
-				D0E8AF9A2A03D386002EF2F4 /* ContentView.swift */,
 				D0E8AF9C2A03D388002EF2F4 /* Assets.xcassets */,
 				D0E8AFA12A03D388002EF2F4 /* Persistence.swift */,
 				D0E8AFA32A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld */,
@@ -401,6 +507,7 @@
 			name = "Yyussa Rent";
 			packageProductDependencies = (
 				D01BD5D42A08F320004D095F /* Alamofire */,
+				D0CA15C72A0E3D3F005BE082 /* Shimmer */,
 			);
 			productName = "Yyussa Rent";
 			productReference = D0E8AF952A03D386002EF2F4 /* Yyussa Rent.app */;
@@ -479,6 +586,7 @@
 			mainGroup = D0E8AF8C2A03D386002EF2F4;
 			packageReferences = (
 				D01BD5D32A08F320004D095F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D0CA15C62A0E3D3F005BE082 /* XCRemoteSwiftPackageReference "shimmer" */,
 			);
 			productRefGroup = D0E8AF962A03D386002EF2F4 /* Products */;
 			projectDirPath = "";
@@ -626,28 +734,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01BD5D02A08EEF0004D095F /* UserRepository.swift in Sources */,
+				D0A1167C2A0CE3E900A0A70E /* ProfileAndSettings.swift in Sources */,
 				D01BD5E12A090399004D095F /* RentalRepositoryImpl.swift in Sources */,
 				D01BD5E32A0906E5004D095F /* AlamofireApiService.swift in Sources */,
 				D01BD5E82A0911D6004D095F /* GetInvoicesUseCase.swift in Sources */,
 				D01BD60F2A0A2D1C004D095F /* BaseViewModel.swift in Sources */,
 				D0E8AFA22A03D388002EF2F4 /* Persistence.swift in Sources */,
+				D0A116742A0BEA4500A0A70E /* MainScreen.swift in Sources */,
+				D0A116802A0D2B9600A0A70E /* YearMonthDatePicker.swift in Sources */,
+				D0A116722A0BE5CE00A0A70E /* DialogBoxLoading.swift in Sources */,
+				D07AAB3D2A0B8F48002B546D /* BottomNavigationBar.swift in Sources */,
+				D0A1167E2A0CE3F600A0A70E /* ProfileDetails.swift in Sources */,
+				D0AAFC3A2A0BB2A700046385 /* AllRoomsScreen.swift in Sources */,
 				D01BD5DA2A08FC67004D095F /* UserRepositoryImpl.swift in Sources */,
 				D0E8AF9B2A03D386002EF2F4 /* ContentView.swift in Sources */,
 				D0E8AFA52A03D388002EF2F4 /* Yyussa_Rent.xcdatamodeld in Sources */,
 				D01BD5FC2A09150B004D095F /* GetDueInvoicesUseCase.swift in Sources */,
+				D07AAB362A0B7A79002B546D /* RentalViewModel.swift in Sources */,
+				D0AAFC352A0BA7A700046385 /* BuildingCard.swift in Sources */,
 				D01BD5EA2A091258004D095F /* GetPaymentsUseCase.swift in Sources */,
+				D0A116702A0BE4B400A0A70E /* NavController.swift in Sources */,
+				D0A1166A2A0BBF9000A0A70E /* GetBuildingAvailableRoomsUseCaseImpl.swift in Sources */,
+				D0AAFC3E2A0BB8FF00046385 /* buildCardInfoView.swift in Sources */,
 				D01BD6002A09153B004D095F /* GetBuildingRoomsUseCase.swift in Sources */,
+				D0AAFC332A0BA31E00046385 /* CardInfoView.swift in Sources */,
 				D01BD5C72A08EC0F004D095F /* Invoice.swift in Sources */,
 				D07AAB322A0A7FC3002B546D /* Color.swift in Sources */,
+				D0A1167A2A0CE3D200A0A70E /* TopNavigationDrawer.swift in Sources */,
+				D0AAFC302A0B985C00046385 /* InfoDialog.swift in Sources */,
+				D0A1166E2A0BE43500A0A70E /* ScreenContainerView.swift in Sources */,
+				D07AAB3A2A0B8B8B002B546D /* Screen.swift in Sources */,
 				D01BD5F62A0914A4004D095F /* GetBuildingDuePaymentsUseCase.swift in Sources */,
 				D01BD5CD2A08ED4B004D095F /* Room.swift in Sources */,
 				D01BD5C32A08EAF1004D095F /* User.swift in Sources */,
+				D0AAFC2E2A0B974200046385 /* HomeScreen.swift in Sources */,
 				D01BD5D72A08F3AD004D095F /* ApiService.swift in Sources */,
 				D01BD5D22A08EF3F004D095F /* RentalRepository.swift in Sources */,
+				D0A116782A0CD92000A0A70E /*   BoxView.swift in Sources */,
 				D01BD5F82A0914BA004D095F /* GetDuePaymentsUseCase.swift in Sources */,
 				D01BD6052A093471004D095F /* GetAvailableRoomsUseCase.swift in Sources */,
 				D0E8AF992A03D386002EF2F4 /* Yyussa_RentApp.swift in Sources */,
 				D01BD6072A0934B8004D095F /* GetOccupiedRoomsUseCase.swift in Sources */,
+				D0B4F8BF2A0E6D1B002D4CC6 /* DateSelectionService.swift in Sources */,
+				D07AAB342A0B72FF002B546D /* UserViewModel.swift in Sources */,
+				D0AAFC372A0BA85700046385 /* BuildingsList.swift in Sources */,
+				D07AAB382A0B81CB002B546D /* DasboardState.swift in Sources */,
 				D01BD5C52A08EB9D004D095F /* Company.swift in Sources */,
 				D01BD5EE2A091288004D095F /* GetUserUseCase.swift in Sources */,
 				D01BD6032A091A5E004D095F /* ResultState.swift in Sources */,
@@ -665,6 +796,7 @@
 				D01BD60B2A093D19004D095F /* RentalUseCases.swift in Sources */,
 				D01BD6252A0A6758004D095F /* DependencyContainer.swift in Sources */,
 				D01BD6132A0A2F7F004D095F /* LoginState.swift in Sources */,
+				D0A1166C2A0BC02800A0A70E /* GetBuildingOccupiedRoomsUseCaseImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1137,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		D0CA15C62A0E3D3F005BE082 /* XCRemoteSwiftPackageReference "shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joshuajhomann/shimmer";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1012,6 +1152,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D01BD5D32A08F320004D095F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		D0CA15C72A0E3D3F005BE082 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0CA15C62A0E3D3F005BE082 /* XCRemoteSwiftPackageReference "shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 

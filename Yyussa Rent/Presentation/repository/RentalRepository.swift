@@ -12,7 +12,8 @@ protocol RentalRepository {
     func getRooms(companyId: String, completion: @escaping (ResultState<[Room]>) -> Void)
     
     func getBuildingRooms(buildingId: String, completion: @escaping (ResultState<[Room]>) -> Void)
-    
+    func getBuildingAvailableRooms(buildingId: String, completion: @escaping (ResultState<[Room]>) -> Void)
+    func getBuildingOccupiedRooms(buildingId: String, completion: @escaping (ResultState<[Room]>) -> Void)
     func getInvoices(companyId: String, completion: @escaping (ResultState<[Invoice]>) -> Void)
     
     func getBuildingInvoices(buildingId: String, completion: @escaping (ResultState<[Invoice]>) -> Void)

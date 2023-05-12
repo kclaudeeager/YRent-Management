@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Invoice:Decodable{
-    let id: Int
+struct Invoice:Decodable,Equatable,Identifiable{
+    let id: String
     let month: String
-    let amount: Double
+    let amount: String
 }

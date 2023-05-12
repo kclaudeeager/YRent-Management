@@ -17,19 +17,22 @@ class LoginUseCaseImpl : LoginUseCase {
     
     func execute(username: String, password: String, completion: @escaping (ResultState<User>) -> Void) {
         repository.login(username: username, password: password) { resultState in
+          
             switch resultState {
             case .success(let data):
                 do {
                     let decoder = JSONDecoder()
                     let user = try decoder.decode(User.self, from: data)
-                    completion(.success(content: user))
+                    completion(.success(user))
                 } catch {
-                    completion(.failure(error: error))
+                    completion(.failure(error))
                 }
             case .failure(let error):
-                completion(.failure(error: error))
+                completion(.failure(error))
             case .loading:
                 completion(.loading)
+            case .idle:
+                completion(.idle)
             }
         }
 
