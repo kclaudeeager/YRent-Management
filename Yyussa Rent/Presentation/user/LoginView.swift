@@ -121,7 +121,7 @@ struct LoginView: View {
                     let dependencyContainer = DependencyContainer()
                     let rentalViewModel = dependencyContainer.rentalViewModel
                     let userViewModel = dependencyContainer.userViewModel
-                    
+                    userViewModel.user=user
                     let mainView = MainView(viewModel: rentalViewModel, userViewModel:userViewModel, user: user ,userId:user.acc_id, companyId: user.co_id)
                     let homePageViewController = UIHostingController(rootView: mainView)
                     mainWindow.rootViewController = UINavigationController(rootViewController: homePageViewController)

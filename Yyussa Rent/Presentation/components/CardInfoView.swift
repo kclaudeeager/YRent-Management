@@ -45,6 +45,7 @@ struct CardInfoView: View {
                     Gradient(colors: [Color.loginBackground1,Color.loginBackground2])
                 )
         )
+        .cornerRadius(14)
         .onTapGesture {
             navController.navigate(to: root)
         }

@@ -19,6 +19,7 @@ struct buildCardInfoView: View {
     let isHome: Bool
     let buildings: [Building]
     let companyId:String
+    @State private var isLoading=false
     @State private var choosenDate = Date()
     @State private var isShowingDatePicker = false
     @State private var selectedDate:Date = Date()
@@ -65,15 +66,20 @@ struct buildCardInfoView: View {
                         }
                     }
                 }
-                CardInfoView(
-                    itemCount: itemCount,
-                    itemName: itemName,
-                    root: root,
-                    navController: navController,
-                    icon: {
-                        Image(systemName: icon)
-                    }()
-                )
+                if isLoading{
+                    ProgressView()
+                } else{
+                    CardInfoView(
+                        itemCount: itemCount,
+                        itemName: itemName,
+                        root: root,
+                        navController: navController,
+                        icon: {
+                            Image(systemName: icon)
+                        }()
+                    )
+                }
+              
             }.onAppear(){
                 if root == Screen.invoice.route{
                     if let invoiceSelectedDate = DateSelectionService.shared.invoiceSelectedDate{
@@ -111,6 +117,8 @@ struct buildCardInfoView: View {
                     }
                 )
             }
+          
+          
         }
       
     }
@@ -124,15 +132,18 @@ struct buildCardInfoView: View {
                     .sink { resultState in
                         switch resultState {
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading....")
+                            self.isLoading=true
                             break
                         case .success(let rooms):
                             completion(rooms.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                     }
                     .store(in: &viewModel.cancellables)
@@ -142,15 +153,18 @@ struct buildCardInfoView: View {
                     .sink { resultState in
                         switch resultState {
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading rooms....")
+                            self.isLoading=true
                             break
                         case .success(let rooms):
                             completion(rooms.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                          
                         }
                     }
                     .store(in: &viewModel.cancellables)
@@ -162,15 +176,18 @@ struct buildCardInfoView: View {
                     .sink { resultState in
                         switch resultState {
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading....")
+                            self.isLoading=true
                             break
                         case .success(let rooms):
                             completion(rooms.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                     }
                     .store(in: &viewModel.cancellables)
@@ -180,15 +197,18 @@ struct buildCardInfoView: View {
                     .sink { resultState in
                         switch resultState {
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading rooms....")
+                            self.isLoading=true
                             break
                         case .success(let rooms):
                             completion(rooms.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                     }
                     .store(in: &viewModel.cancellables)
@@ -202,15 +222,18 @@ struct buildCardInfoView: View {
                         switch resultState{
                             
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading  \(datePickerFormatter.string(from: selectedDate)) invoices....")
+                            self.isLoading=true
                             break
                         case .success(let invoices):
                             completion(invoices.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                         
                     }
@@ -224,15 +247,18 @@ struct buildCardInfoView: View {
                         switch resultState{
                             
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading  \(datePickerFormatter.string(from: selectedDate)) ivoices....")
+                            self.isLoading=true
                             break
                         case .success(let invoices):
                             completion(invoices.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                         
                     }
@@ -247,15 +273,18 @@ struct buildCardInfoView: View {
                         switch resultState{
                             
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading \(datePickerFormatter.string(from: selectedDate)) payments....")
+                            self.isLoading=true
                             break
                         case .success(let payments):
                            completion(payments.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                       
                     }
@@ -269,15 +298,18 @@ struct buildCardInfoView: View {
                         switch resultState{
                             
                         case .idle:
+                            self.isLoading=false
                             break
                         case .loading:
-                            print("Loading  \(datePickerFormatter.string(from: selectedDate)) payments....")
+                            self.isLoading=true
                             break
                         case .success(let payments):
                             completion(payments.count)
+                            self.isLoading=false
                         case .failure(let error):
-                            print("Error",error.localizedDescription)
+                            self.isLoading=false
                             self.networkErrorDialog=error.localizedDescription
+                           
                         }
                        
                     }

@@ -12,7 +12,10 @@ class UserViewModel: BaseViewModel {
     private let getUserUseCase: GetUserUseCase
     private let getCompanyUseCase: GetCompanyUseCase
     
+    @Published var user:User?=nil
+    
     @Published var userResult: ResultState<User> = .loading
+    
     @Published var companyResult: ResultState<Company> = .loading
     
     init(getUserUseCase: GetUserUseCase, getCompanyUseCase: GetCompanyUseCase) {
@@ -39,8 +42,6 @@ class UserViewModel: BaseViewModel {
     }
     
     func logout(user: User) {
-        // Perform the logout logic here
-        // For example, you could clear the user's session or token
-        // and navigate the user back to the login screen
+        self.user=nil
     }
 }

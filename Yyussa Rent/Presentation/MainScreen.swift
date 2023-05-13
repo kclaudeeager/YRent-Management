@@ -22,6 +22,8 @@ struct MainView: View {
     @State private var invoiceCount = 0
     @State private var paymentsCount = 0
     
+    @State private var showAlert=false
+    @State private var confirmLogOut=false
     let screens = [
         Screen(route: "home", title: "Home", icon: "house"),
         Screen(route: "available_rooms", title: "Available", icon: "exclamationmark.triangle"),
@@ -61,8 +63,17 @@ struct MainView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(.top, 1)
                     BottomNavigationBar(screens: screens, givenScreenCounts: screenCounts, selectedItemIndex: $navController.currentScreenIndex, navController: navController, companyId: companyId, viewModel: viewModel)
+                } .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Are you sure you want to logout?"),
+                        primaryButton: .default(Text("Cancel")),
+                        secondaryButton: .destructive(Text("Logout")) {
+                            showAlert=false
+                            confirmLogOut=true
+                        }
+                    )
                 }
-               
+
                 .ignoresSafeArea()
                 .navigationTitle("")
                 .toolbar {
@@ -71,14 +82,18 @@ struct MainView: View {
                             navController.isLeftPanelOpen.toggle()
                         }, label: {
                             Image(systemName: "line.horizontal.3")
-                        })
+                        }
+                               
+                        )
+                      
+                        
                     }
                     ToolbarItem(placement: .navigation) {
                         Text(company?.cmp_full ?? "YYUSSA").bold().padding(.leading, 16)
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {
-                            userViewModel.logout(user: user)
+                            showAlert=true
                         }, label: {
                             Image(systemName: "power")
                         })
@@ -90,7 +105,7 @@ struct MainView: View {
                 withAnimation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false)) {
                     
                     TopNavigationDrawer(drawerState: $navController.isLeftPanelOpen, onLogout: {
-                        userViewModel.logout(user: user)
+                        showAlert=true
                     }, user: user, companyName: company?.cmp_full ?? "YYUSSA")
                     .offset(x: navController.isLeftPanelOpen ? 0 : -UIScreen.main.bounds.width / 2)
                     
@@ -98,8 +113,13 @@ struct MainView: View {
             }
             
         }
+        .onChange(of: confirmLogOut){newValue in
+            if newValue{
+                userViewModel.logout(user: user)
+            }
+            
+        }
         .onAppear {
-          
             viewModel.getRooms(company_id: companyId)
             viewModel.$roomsState
                 .sink{ roomsState in
@@ -258,7 +278,23 @@ struct MainView: View {
         .onChange(of: paymentsCount){newValue in
             data["payments"] = newValue
         }
+        .onChange(of: userViewModel.user){newValue in
+            if newValue == nil{
+                DispatchQueue.main.async {
+                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                        let mainWindow = windowScene.windows.first(where: { $0.isKeyWindow }) else {
+                            fatalError("Unable to retrieve main window")
+                        
+                    }
+                  
+                    let contentView =   ContentView()
+                    let contentViewController = UIHostingController(rootView: contentView)
+                    mainWindow.rootViewController = UINavigationController(rootViewController: contentViewController)
+                }
+            }
+        }
         
+     
     }
 }
 
