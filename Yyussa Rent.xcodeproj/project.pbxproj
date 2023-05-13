@@ -45,6 +45,7 @@
 		D01BD6132A0A2F7F004D095F /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6122A0A2F7F004D095F /* LoginState.swift */; };
 		D01BD6182A0A374D004D095F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6172A0A374D004D095F /* LoginView.swift */; };
 		D01BD6252A0A6758004D095F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BD6242A0A6758004D095F /* DependencyContainer.swift */; };
+		D0737E3D2A0FC73B0059AF54 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0737E3C2A0FC73B0059AF54 /* Launch Screen.storyboard */; };
 		D07AAB322A0A7FC3002B546D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB312A0A7FC3002B546D /* Color.swift */; };
 		D07AAB342A0B72FF002B546D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB332A0B72FF002B546D /* UserViewModel.swift */; };
 		D07AAB362A0B7A79002B546D /* RentalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AAB352A0B7A79002B546D /* RentalViewModel.swift */; };
@@ -145,6 +146,8 @@
 		D01BD6122A0A2F7F004D095F /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 		D01BD6172A0A374D004D095F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D01BD6242A0A6758004D095F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		D0737E3C2A0FC73B0059AF54 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D0737E3E2A0FC99F0059AF54 /* Yyussa-Rent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yyussa-Rent-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D07AAB312A0A7FC3002B546D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D07AAB332A0B72FF002B546D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D07AAB352A0B7A79002B546D /* RentalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalViewModel.swift; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 				D01BD60E2A0A2D1C004D095F /* BaseViewModel.swift */,
 				D07AAB392A0B8B8B002B546D /* Screen.swift */,
 				D0A116732A0BEA4500A0A70E /* MainScreen.swift */,
+				D0737E3C2A0FC73B0059AF54 /* Launch Screen.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -447,6 +451,7 @@
 		D0E8AF972A03D386002EF2F4 /* Yyussa Rent */ = {
 			isa = PBXGroup;
 			children = (
+				D0737E3E2A0FC99F0059AF54 /* Yyussa-Rent-Info.plist */,
 				D01BD6192A0A40C4004D095F /* Supporting File */,
 				D01BD6012A091A50004D095F /* core */,
 				D01BD5DB2A08FED7004D095F /* di */,
@@ -604,6 +609,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0737E3D2A0FC73B0059AF54 /* Launch Screen.storyboard in Resources */,
 				D0E8AFA02A03D388002EF2F4 /* Preview Assets.xcassets in Resources */,
 				D0E8AF9D2A03D388002EF2F4 /* Assets.xcassets in Resources */,
 			);
@@ -953,15 +959,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yyussa Rent/Preview Content\"";
 				DEVELOPMENT_TEAM = KYX3HSP2WF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yyussa-Rent-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -983,15 +992,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yyussa Rent/Preview Content\"";
 				DEVELOPMENT_TEAM = KYX3HSP2WF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yyussa-Rent-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
